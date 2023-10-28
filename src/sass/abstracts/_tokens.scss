@@ -7,8 +7,8 @@ $enable-media-query-dark-mode: true;
 // Contextual
 $color-text-default: $color-neutral-700;
 $color-background-default: $color-primary-100;
-$color-interactive-default: $color-accent-400;
-$color-interactive-hover: $color-accent-500;
+$color-text-interactive-default: $color-accent-400;
+$color-text-interactive-hover: $color-accent-500;
 
 // Set to 0 to disable
 $letter-spacing-loose: 0;
@@ -20,3 +20,6 @@ $body-line-height: 1.5;
 $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
+
+$link-color: $color-text-interactive-default;
+$link-color-hover: $color-text-interactive-hover;
