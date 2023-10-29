@@ -65,6 +65,15 @@ $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
 
+// site header
+$site-header-background-color: $color-primary-300;
+$site-header-color: $color-neutral-900;
+$site-header-padding: $size-8 0;
+$site-header-margin: 0;
+$site-header-justification-small-screens: center;
+$site-header-justification-large-screens: space-between;
+$site-header-alignment: center;
+
 // site footer
 $footer-background-color: $color-primary-300;
 $footer-text-color: $color-primary-900;
