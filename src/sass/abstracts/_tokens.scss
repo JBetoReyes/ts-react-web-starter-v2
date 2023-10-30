@@ -1,8 +1,9 @@
 @use "colors" as *;
 @use "typography" as *;
+@use "sizes" as *;
 
 $active-theme: $light;
-$enable-media-query-dark-mode: true;
+$enable-media-query-dark-mode: false;
 
 // Contextual
 $color-text-default: $color-neutral-700;
@@ -10,7 +11,7 @@ $color-background-default: $color-primary-100;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
 
-// Set to 0 to disable
+// set to 0 to disable
 $letter-spacing-loose: 0;
 
 $border-radius-1: $size-2;
@@ -56,6 +57,27 @@ $heading-2-color: $heading-color-default;
 $heading-3-font-size: $font-size-700;
 $heading-3-color: $heading-color-default;
 
+// layout
+$grid-gap: $size-6;
+$flex-group-gap: $size-4;
+
+$hero-padding-block: clamp(15rem, 15vh, 20rem);
+$section-padding-block: clamp(5rem, 10vh, 6rem);
+
+$container-min-margin-inline: $size-4;
+$container-max-width: 64rem;
+$container-max-width-narrow: 40rem;
+$container-max-width-wide: 75rem;
+
+// site header
+$site-header-background-color: $color-primary-300;
+$site-header-color: $color-neutral-900;
+$site-header-padding: $size-8 0;
+$site-header-margin: 0;
+$site-header-jusitifcation-small-screens: center;
+$site-header-jusitifcation-large-screens: space-between;
+$site-header-alignment: center;
+
 //navigation
 $navigation-color: $site-header-color;
 $navigation-color-hover: $color-primary-300;
@@ -64,15 +86,6 @@ $navigation-gap: $size-9;
 $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
-
-// site header
-$site-header-background-color: $color-primary-300;
-$site-header-color: $color-neutral-900;
-$site-header-padding: $size-8 0;
-$site-header-margin: 0;
-$site-header-justification-small-screens: center;
-$site-header-justification-large-screens: space-between;
-$site-header-alignment: center;
 
 // site footer
 $footer-background-color: $color-primary-300;
@@ -83,7 +96,6 @@ $footer-link-font-family: $font-family-accent;
 $footer-link-text-decoration: none;
 
 // buttons
-$button-line-height: 1;
 $button-font-family: $body-font-family;
 $button-font-size: $font-size-400;
 $button-font-weight: $font-weight-bold;
@@ -101,7 +113,7 @@ $button-primary-background: $color-primary-700;
 $button-primary-color-hover: $color-neutral-100;
 $button-primary-background-hover: $color-primary-800;
 
-//cards
+// cards
 $card-flow-spacing: $size-2;
 $card-padding: $size-8;
 $card-shadow: $box-shadow-1;
